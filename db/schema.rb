@@ -40,12 +40,13 @@ ActiveRecord::Schema.define(version: 20170123141959) do
   create_table "users", id: :uuid, default: -> { "uuid_generate_v4()" }, force: :cascade do |t|
     t.string   "email"
     t.string   "phone"
-    t.string   "encrypted_password", default: "", null: false
+    t.string   "encrypted_password", default: "",  null: false
     t.string   "username"
     t.integer  "role"
     t.string   "avatar"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
+    t.float    "fighting_capacity",  default: 0.0
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.index ["email", "phone"], name: "index_users_on_email_and_phone", unique: true, using: :btree
   end
 

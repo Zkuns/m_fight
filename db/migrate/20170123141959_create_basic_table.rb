@@ -11,6 +11,8 @@ class CreateBasicTable < ActiveRecord::Migration[5.0]
       t.integer :role
       t.string  :avatar
 
+      t.float :fighting_capacity,  default: '0'
+
       t.timestamps                   null: false
     end
     add_index :users, %w(email phone), unique: true
