@@ -16,6 +16,12 @@ gem 'puma', '~> 3.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Rails configuration
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
+# Use omniauth
+gem 'omniauth-mess', github: 'Zkuns/omniauth-mess'
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-attack'
 gem 'rack-cors', require: 'rack/cors'
@@ -45,4 +51,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
