@@ -26,3 +26,9 @@ before_script:
 script:
   - bundle exec rspec spec
 
+notifications:
+  email:
+    recipients:
+      - zhukun6150909@outlook.com
+    on_success: always
+    on_failure: never
