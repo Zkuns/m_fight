@@ -52,3 +52,6 @@ Bundler/OrderedGems:
 Style/ClassAndModuleChildren:
   Enabled: false
 
+Style/BlockComments:
+  Enabled: false
+
